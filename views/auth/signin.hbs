@@ -1,0 +1,15 @@
+<div class="form">
+  <form action="/auth/signin" method="post">
+    <label for="input-username">Username</label>
+    <input required type="text" name="name" id="input-username">
+
+    <label for="input-password">Password</label>
+    <input required type="password" name="password" id="input-password">
+
+    <button>Sign Up</button>
+  </form>
+
+  {{#if error}}
+    <p>There was an error signing up</p>
+  {{/if}}
+</div>
