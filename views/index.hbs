@@ -1,3 +1,6 @@
 <h1>Hello World</h1>
 <a href="/auth/signup">Sign up</a> | <a href="/auth/signin">Sign in</a>
-{{#if user}} | <a href="/profile">See profile</a>{{/if}}
+{{#if user}} | <a href="/profile">See profile</a>
+<form action="/auth/logout" method="post">
+  <button type="submit">Logout</button>
+</form>{{/if}}
